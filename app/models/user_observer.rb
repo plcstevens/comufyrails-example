@@ -1,10 +1,12 @@
 class UserObserver < ActiveRecord::Observer
 
   def after_save(user)
-    Comufyrails::Connection.store_user '284002537', { dob: 1355931600000, fact: "test" }
+    dob = (user.dob.to_f * 1000.0).to_i
+    Comufyrails::Connection.store_user user.facebook_id.to_s, { dob: dob, fact: user.fact }
   end
 
   def after_update(user)
-    Comufyrails::Connection.store_user '284002537', { dob: 1355931600000, fact: "test" }
+    dob = (user.dob.to_f * 1000.0).to_i
+    Comufyrails::Connection.store_user user.facebook_id.to_s, { dob: dob, fact: user.fact }
   end
 end
