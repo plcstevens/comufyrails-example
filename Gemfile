@@ -15,3 +15,5 @@ end
 gem 'jquery-rails'
 
 gem 'comufyrails', :git => "git://github.com/plcstevens/comufyrails.git"
+
+gem 'thin'
