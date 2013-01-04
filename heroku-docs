@@ -1,0 +1,64 @@
+http://whatcodecraves.com/articles/2008/02/05/setup-rails-with-postgresql
+https://devcenter.heroku.com/articles/rails3
+
+
+
+  Installing Comufy Rails
+
+You need to add the gem 'comufyrails' to your Gemfile. You can choose any of the following ways, as well
+as specifying the version or sub-version.
+
+[code]
+gem 'comufyrails'
+gem 'comufyrails', :git => "git://github.com/plcstevens/comufyrails.git"
+gem 'comufyrails', :path => "/path/to/comufyrails/directory"
+[/code]
+
+Afterwards if you run it will install the gem for you.
+
+[cli]
+$ bundle install
+[/cli]
+
+  Configuring Comufy Rails
+
+Once installed there are a number of ways of using the gem and configuring it.
+
+    Heroku
+
+If you are using this on Heroku then you should add the Comufy addon and go through its initialization steps as it
+will handle setting the local environment variables that this gem uses.
+
+TODO - Actually get this fully implemented and working!?
+
+    Other
+
+If you are using this on your local development machine or elsewhere you have two ways to configure this gem. You can
+set the values in your config/environments/*.rb in the same manner you set rails-specific values.
+
+[code]
+config.comufy_rails.app_name      = 'YOUR_APPLICATION_NAME'
+config.comufy_rails.access_token  = 'YOUR_ACCESS_TOKEN'
+config.comufy_rails.base_api_url  = 'COMUFY'
+[/code]
+
+     Getting these variables
+
+To actually get these values you'll need to have an account with Comufy, or via our Heroku Comufy service. If you
+are using our Heroku service then you can remove the config.comufy_rails.base_api_url from your environment.
+
+TODO - what is the base_api_url for Comufy?
+
+Alternatively you can set these in your environment, where the options are
+
+ *  COMUFY_APP_NAME - Application name (Required!)
+ *  COMUFY_USER     - Username of your Comufy account (Optional)
+ *  COMUFY_PASSWORD - Password of your Comufy account (Optional)
+ *  COMUFY_TOKEN    - Token given to you either by our Comufy Heroku service or from Comufy itself (Optional)
+
+TODO - should base_api_url be an environment variable?
+
+
+
+
+
