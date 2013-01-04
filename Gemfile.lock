@@ -1,5 +1,6 @@
-PATH
-  remote: /home/cinnamon/projects/comufyrails
+GIT
+  remote: git://github.com/plcstevens/comufyrails.git
+  revision: e53189fce29f8a8b06de1e6093f611853b379a50
   specs:
     comufyrails (0.0.3)
       activesupport
