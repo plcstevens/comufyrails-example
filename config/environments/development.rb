@@ -34,7 +34,4 @@ RailsExample::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-
-  config.comufy_rails.app_name      = 'ComufyRubyTest'
-  config.comufy_rails.access_token  = '1bpT5qZsZfpOAdL6ePGFFECooRwFwtd4xOqtkRQmFe'
 end
