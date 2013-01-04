@@ -64,4 +64,7 @@ RailsExample::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  config.comufy_rails.app_name      = 'ComufyRubyTest'
+  config.comufy_rails.access_token  = '1bpT5qZsZfpOAdL6ePGFFECooRwFwtd4xOqtkRQmFe'
 end
