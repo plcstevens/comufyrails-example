@@ -37,5 +37,4 @@ RailsExample::Application.configure do
 
   config.comufy_rails.app_name      = 'ComufyRubyTest'
   config.comufy_rails.access_token  = '1bpT5qZsZfpOAdL6ePGFFECooRwFwtd4xOqtkRQmFe'
-  config.comufy_rails.expiry_time   = '1456110835213'
 end
