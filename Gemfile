@@ -22,5 +22,5 @@ gem 'validates_timeliness', '~> 3.0'
 
 # gem 'comufyrails'
 gem 'comufyrails', :git => "git://github.com/plcstevens/comufyrails.git"
-# gem 'comufyrails', :path => "/path/to/comufyrails/directory"
-# gem 'comufyrails', :path => "/home/cinnamon/projects/comufyrails"
+#gem 'comufyrails', :path => "/path/to/comufyrails/directory"
+#gem 'comufyrails', :path => "/home/cinnamon/projects/comufyrails"
