@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.11'
 
 gem 'pg', '~>0.13.2'
 
@@ -20,7 +20,4 @@ gem 'thin'
 # helps in validating datetime objects
 gem 'validates_timeliness', '~> 3.0'
 
-# gem 'comufyrails'
 gem 'comufyrails', :git => "git://github.com/plcstevens/comufyrails.git"
-#gem 'comufyrails', :path => "/path/to/comufyrails/directory"
-#gem 'comufyrails', :path => "/home/cinnamon/projects/comufyrails"
