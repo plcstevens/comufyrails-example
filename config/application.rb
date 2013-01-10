@@ -61,6 +61,5 @@ module RailsExample
 
     # Disabled to avoid exceptions on Heroku
     config.assets.initialize_on_precompile = false
-    
   end
 end

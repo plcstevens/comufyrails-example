@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/plcstevens/comufyrails.git
-  revision: 698d1919ea73b0686df468574797f1734b3d633b
+  revision: 211794669f35625fbbeab8db416aae635dda0a19
   specs:
-    comufyrails (0.1.2a)
+    comufyrails (0.1.2b)
       activesupport
       em-http-request
       em-synchrony
