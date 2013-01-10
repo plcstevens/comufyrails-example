@@ -20,4 +20,6 @@ gem 'thin'
 # helps in validating datetime objects
 gem 'validates_timeliness', '~> 3.0'
 
+#gem 'comufyrails'
 gem 'comufyrails', :git => "git://github.com/plcstevens/comufyrails.git"
+#gem 'comufyrails', :path => "/home/cinnamon/projects/comufyrails"
