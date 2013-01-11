@@ -12,10 +12,6 @@ class UserObserver < ActiveRecord::Observer
     store(user)
   end
 
-  def after_update(user)
-    store(user)
-  end
-
   private
 
   def store(user)

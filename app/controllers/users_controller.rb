@@ -1,5 +1,13 @@
 class UsersController < ApplicationController
 
+  # Updates all users by checking their data at Comufy.
+  # This is likely something that in the future should be put into a delayed job.
+  def comufy
+    User.update_with_comufy
+
+    redirect_to :root
+  end
+
   # GET /users
   # GET /users.json
   def index

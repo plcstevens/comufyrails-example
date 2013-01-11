@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
   end
 
   # Goes through all users, checking their data and updating it.
-  def self.update_users_with_comufy
+  def self.update_with_comufy
     Comufyrails::Connection.users do |users, total, to, from|
       users.each do |user|
         account = user.delete("account")
