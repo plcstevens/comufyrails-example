@@ -1,10 +1,9 @@
 class UsersController < ApplicationController
+
   # GET /users
   # GET /users.json
   def index
     @users = User.all
-    Comufyrails::Connection.tags { |message| p message }
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @users }
@@ -15,6 +14,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    @user.update_with_comufy
 
     respond_to do |format|
       format.html # show.html.erb
