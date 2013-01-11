@@ -1,11 +1,11 @@
 GIT
   remote: git://github.com/plcstevens/comufyrails.git
-  revision: 498078d748f9a96a987acc70c1513da2a15965dd
+  revision: d4683be3d7196bbaf2f9b4a8126e6411b18ec73b
   specs:
-    comufyrails (0.1.2h)
-      activesupport
-      em-http-request
-      em-synchrony
+    comufyrails (0.1.3)
+      activesupport (~> 3.2.11)
+      em-http-request (~> 1.0.3)
+      em-synchrony (~> 1.0.2)
 
 GEM
   remote: https://rubygems.org/
