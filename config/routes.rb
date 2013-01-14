@@ -2,7 +2,6 @@ RailsExample::Application.routes.draw do
 
   root :to => "users#index"
 
-  resources :admins
   resources :users do
     collection do
       get :comufy
